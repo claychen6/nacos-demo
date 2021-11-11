@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.clay</groupId>
+    <artifactId>uac-service</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <spring.boot.version>2.3.2.RELEASE</spring.boot.version>
+        <lombok.version>1.18.20</lombok.version>
+        <mybatis-plus.version>3.4.2</mybatis-plus.version>
+        <mysql.version>8.0.26</mysql.version>
+        <h2.version>1.4.200</h2.version>
+        <annotations.version>21.0.1</annotations.version>
+        <fastjson.version>1.2.78</fastjson.version>
+        <assertj-core.version>3.20.2</assertj-core.version>
+        <junit.version>5.7.2</junit.version>
+        <hibernate-validator.version>6.1.7.Final</hibernate-validator.version>
+        <nacos.version>0.2.10</nacos.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+            <version>${spring.boot.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>${spring.boot.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba.boot</groupId>
+            <artifactId>nacos-config-spring-boot-starter</artifactId>
+            <version>${nacos.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba.boot</groupId>
+            <artifactId>nacos-discovery-spring-boot-starter</artifactId>
+            <version>${nacos.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+        </dependency>
+
+    </dependencies>
+
+</project>
